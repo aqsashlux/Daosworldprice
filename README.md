@@ -11,17 +11,23 @@ A Telegram bot designed to monitor and analyze cryptocurrency token prices on De
 - **DEX Integration**: Support for various decentralized exchanges
 - **Automated Updates**: Continuous price and market data monitoring
 
+## Project Structure
+```
+crypto-price-tracking-bot/
+├── bot.js          # Main bot file with all functionality
+├── .env            # Environment variables configuration
+├── package.json    # Project dependencies
+└── README.md       # Project documentation
+```
+
 ## Technical Stack
 - Node.js
 - Telegram Bot API
 - DexScreener API
-- PocketHost Database
 - Dependencies:
-  - node-telegram-bot-api
-  - axios
-  - puppeteer
-  - node-fetch
-  - dotenv
+  - `node-telegram-bot-api`: Telegram Bot API integration
+  - `node-fetch`: HTTP requests handling
+  - `dotenv`: Environment variables management
 
 ## Installation
 1. Clone the repository:
@@ -39,7 +45,7 @@ npm install
 1. Create a `.env` file in the project root:
 ```bash
 # Create and edit the .env file
-cp .env.example .env
+touch .env
 ```
 
 2. Configure your environment variables in the `.env` file:
@@ -62,17 +68,22 @@ UPDATE_INTERVAL=300000  # 5 minutes in milliseconds
 - Keep a secure backup of your token
 
 ## Usage
-1. Start the bot:
+Start the bot with:
 ```bash
-node main.js
+npm start
 ```
+
+## Available Commands
+- `/start` - Get started with the bot
+- `/tokens` - List all active tokens
+- `/price <ticker>` - Get price information for a specific token
+- `/info <ticker>` - Get detailed information about a token
 
 ## How It Works
 1. The bot connects to Telegram and listens for user commands
-2. Periodically fetches token data from DexScreener API
-3. Processes and formats market data for user-friendly display
-4. Sends updates and notifications through Telegram
-5. Stores historical data in PocketHost database
+2. When a command is received, it fetches data from DexScreener API
+3. The data is processed and formatted for user-friendly display
+4. Information is sent back to the user through Telegram
 
 ## Features in Detail
 - Price tracking for multiple tokens
