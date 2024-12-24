@@ -1,59 +1,68 @@
-# Price Tracking Bot 🤖💰
+# Crypto Price Tracking Bot 🤖💰
 
 ## Overview
-An automated price tracking bot designed to monitor and analyze product prices across multiple e-commerce platforms. This powerful tool helps users make informed purchasing decisions by tracking price fluctuations and providing timely notifications.
+A Telegram bot designed to monitor and analyze cryptocurrency token prices on DexScreener. This powerful tool helps users track token prices, market caps, and liquidity across different DEXes, providing real-time information through Telegram.
 
 ## Key Features
-- **Automated Price Monitoring**: Continuously tracks product prices across multiple platforms
-- **Real-time Price Alerts**: Instant notifications when prices drop below your target
-- **Historical Price Analysis**: Track price trends and patterns over time
-- **Multi-Platform Support**: Monitor prices across various e-commerce websites
-- **User-friendly Interface**: Easy setup and configuration
-- **Customizable Alerts**: Set your own price thresholds and notification preferences
+- **Real-time Token Monitoring**: Track cryptocurrency prices from DexScreener
+- **Market Data Analysis**: Get detailed information about market cap, liquidity, and 24h volume
+- **Telegram Integration**: Receive updates and notifications directly in Telegram
+- **Multi-Token Support**: Monitor multiple tokens simultaneously
+- **DEX Integration**: Support for various decentralized exchanges
+- **Automated Updates**: Continuous price and market data monitoring
 
-## Technical Requirements
-- Python 3.8 or higher
-- Internet connection
-- Modern web browser
-- Required Python packages (see `requirements.txt`)
+## Technical Stack
+- Node.js
+- Telegram Bot API
+- DexScreener API
+- PocketHost Database
+- Dependencies:
+  - node-telegram-bot-api
+  - axios
+  - puppeteer
+  - node-fetch
 
 ## Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/price-tracking-bot.git
-cd price-tracking-bot
+git clone https://github.com/aqsashlux/daosworldmkcap.git
+cd daosworldmkcap
 ```
 
 2. Install dependencies:
 ```bash
-pip install -r requirements.txt
+npm install
 ```
 
 ## Configuration
-1. Create a `config.json` file with your settings:
-```json
+1. Set up your `config.js` with your credentials:
+```javascript
 {
-  "notification_preferences": {
-    "email": true,
-    "desktop": false
-  },
-  "update_interval": 3600,
-  "price_threshold": 10
+  "telegram_token": "YOUR_TELEGRAM_BOT_TOKEN",
+  "update_interval": 300000  // 5 minutes in milliseconds
 }
 ```
 
 ## Usage
-1. Add your target products in the configuration file
-2. Run the bot:
+1. Start the bot:
 ```bash
-python main.py
+node main.js
 ```
 
 ## How It Works
-1. The bot periodically scrapes product pages for price information
-2. Prices are stored in a database for historical analysis
-3. When prices match your criteria, you receive notifications
-4. Access historical data through the interface to analyze price trends
+1. The bot connects to Telegram and listens for user commands
+2. Periodically fetches token data from DexScreener API
+3. Processes and formats market data for user-friendly display
+4. Sends updates and notifications through Telegram
+5. Stores historical data in PocketHost database
+
+## Features in Detail
+- Price tracking for multiple tokens
+- Market cap monitoring
+- Liquidity analysis
+- 24-hour volume tracking
+- Custom price alerts
+- Token information lookup
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
