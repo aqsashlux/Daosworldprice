@@ -21,6 +21,7 @@ A Telegram bot designed to monitor and analyze cryptocurrency token prices on De
   - axios
   - puppeteer
   - node-fetch
+  - dotenv
 
 ## Installation
 1. Clone the repository:
@@ -35,34 +36,30 @@ npm install
 ```
 
 ## Configuration
-1. Crea un archivo `.env` en la raíz del proyecto:
+1. Create a `.env` file in the project root:
 ```bash
-# Crea y edita el archivo .env
+# Create and edit the .env file
 cp .env.example .env
 ```
 
-2. Configura tus variables de entorno en el archivo `.env`:
+2. Configure your environment variables in the `.env` file:
 ```bash
 # Telegram Bot Configuration
 TELEGRAM_BOT_TOKEN=your_bot_token_here
-
-# API Configuration
-DEXSCREENER_API_URL=https://api.dexscreener.com/latest/dex
-POCKETHOST_API_URL=https://daos.pockethost.io/api
 
 # Update Configuration
 UPDATE_INTERVAL=300000  # 5 minutes in milliseconds
 ```
 
-3. Obtén tu token de bot de Telegram:
-   - Habla con [@BotFather](https://t.me/BotFather) en Telegram
-   - Usa el comando `/newbot` para crear un nuevo bot
-   - Copia el token proporcionado y colócalo en `TELEGRAM_BOT_TOKEN`
+3. Get your Telegram bot token:
+   - Talk to [@BotFather](https://t.me/BotFather) on Telegram
+   - Use the `/newbot` command to create a new bot
+   - Copy the provided token and paste it in `TELEGRAM_BOT_TOKEN`
 
-⚠️ **Importante**: 
-- Nunca compartas tu token de bot
-- No subas el archivo `.env` a Git (ya está en .gitignore)
-- Mantén una copia de respaldo segura de tu token
+⚠️ **Important**: 
+- Never share your bot token
+- Don't commit the `.env` file to Git (it's already in .gitignore)
+- Keep a secure backup of your token
 
 ## Usage
 1. Start the bot:
