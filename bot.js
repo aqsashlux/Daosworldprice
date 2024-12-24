@@ -1,8 +1,9 @@
+require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 const fetch = require('node-fetch');
 
-// Bot Token
-const token = '7627975808:AAH5j9m2QjazVlW2XBJXNtbbUHb2xlPpqhw';
+// Bot Token from environment variable
+const token = process.env.TELEGRAM_BOT_TOKEN;
 const bot = new TelegramBot(token, {polling: true});
 
 // Get DexScreener data
