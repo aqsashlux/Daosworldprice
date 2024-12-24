@@ -1,19 +1,19 @@
-# Crypto Price Tracking Bot 🤖💰
+# Daos World Price Bot 🤖💰
 
 ## Overview
-A Telegram bot designed to monitor and analyze cryptocurrency token prices on DexScreener. This powerful tool helps users track token prices, market caps, and liquidity across different DEXes, providing real-time information through Telegram.
+A Telegram bot designed to monitor and analyze cryptocurrency token prices from Daos World (daos.world) ecosystem. This powerful tool helps users track token prices, market caps, and liquidity across different DEXes, providing real-time information through Telegram. The bot specifically focuses on tokens listed on the Daos World platform.
 
 ## Key Features
-- **Real-time Token Monitoring**: Track cryptocurrency prices from DexScreener
+- **Real-time Token Monitoring**: Track Daos World cryptocurrency prices from DexScreener
 - **Market Data Analysis**: Get detailed information about market cap, liquidity, and 24h volume
 - **Telegram Integration**: Receive updates and notifications directly in Telegram
-- **Multi-Token Support**: Monitor multiple tokens simultaneously
+- **Multi-Token Support**: Monitor multiple Daos World tokens simultaneously
 - **DEX Integration**: Support for various decentralized exchanges
-- **Automated Updates**: Continuous price and market data monitoring
+- **Automated Updates**: Continuous price and market data monitoring for Daos World tokens
 
 ## Project Structure
 ```
-crypto-price-tracking-bot/
+daos-world-price-bot/
 ├── bot.js          # Main bot file with all functionality
 ├── .env            # Environment variables configuration
 ├── package.json    # Project dependencies
@@ -24,6 +24,7 @@ crypto-price-tracking-bot/
 - Node.js
 - Telegram Bot API
 - DexScreener API
+- Daos World API Integration
 - Dependencies:
   - `node-telegram-bot-api`: Telegram Bot API integration
   - `node-fetch`: HTTP requests handling
@@ -32,8 +33,8 @@ crypto-price-tracking-bot/
 ## Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/aqsashlux/daosworldmkcap.git
-cd daosworldmkcap
+git clone https://github.com/aqsashlux/Daosworldprice.git
+cd Daosworldprice
 ```
 
 2. Install dependencies:
@@ -74,24 +75,29 @@ npm start
 ```
 
 ## Available Commands
-- `/start` - Get started with the bot
-- `/tokens` - List all active tokens
-- `/price <ticker>` - Get price information for a specific token
-- `/info <ticker>` - Get detailed information about a token
+- `/start` - Get started with the bot and see available commands
+- `/tokens` - List all active Daos World tokens
+- `/price <ticker>` - Get price information for a specific Daos World token
+- `/info <ticker>` - Get detailed information about a token including contract and social links
 
 ## How It Works
 1. The bot connects to Telegram and listens for user commands
-2. When a command is received, it fetches data from DexScreener API
-3. The data is processed and formatted for user-friendly display
-4. Information is sent back to the user through Telegram
+2. When a command is received, it fetches token data from Daos World API
+3. Additional market data is fetched from DexScreener API
+4. The data is processed and formatted for user-friendly display
+5. Information is sent back to the user through Telegram
 
 ## Features in Detail
-- Price tracking for multiple tokens
+- Price tracking for Daos World tokens
 - Market cap monitoring
 - Liquidity analysis
 - 24-hour volume tracking
 - Custom price alerts
-- Token information lookup
+- Token information lookup including:
+  - Contract addresses
+  - Pool information
+  - Creator details
+  - Social media links
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
@@ -106,4 +112,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 Daniel - [@Daniel9696r](https://x.com/Daniel9696r)
-Project Link: [https://github.com/aqsashlux/daosworldmkcap](https://github.com/aqsashlux/daosworldmkcap)
+Project Link: [https://github.com/aqsashlux/Daosworldprice](https://github.com/aqsashlux/Daosworldprice)
+Website: [daos.world](https://daos.world)
