@@ -67,5 +67,5 @@ Contributions are welcome! Please follow these steps:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-Your Name - [@your_twitter](https://twitter.com/your_twitter)
-Project Link: [https://github.com/your-username/price-tracking-bot](https://github.com/your-username/price-tracking-bot)
+Daniel - [@Daniel9696r](https://x.com/Daniel9696r)
+Project Link: [https://github.com/aqsashlux/daosworldmkcap](https://github.com/aqsashlux/daosworldmkcap)
