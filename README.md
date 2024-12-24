@@ -1,7 +1,7 @@
 # Daos World Price Bot 🤖💰
 
 ## Overview
-A Telegram bot designed to monitor and analyze cryptocurrency token prices from Daos World (daos.world) ecosystem. This powerful tool helps users track token prices, market caps, and liquidity across different DEXes, providing real-time information through Telegram. The bot specifically focuses on tokens listed on the Daos World platform.
+A Telegram bot created for tracking cryptocurrency token prices from the Daos World platform. This tool helps users monitor token prices, market caps, and liquidity across different DEXes, providing real-time information through Telegram. The bot is specifically designed to track tokens listed on Daos World.
 
 ## Key Features
 - **Real-time Token Monitoring**: Track Daos World cryptocurrency prices from DexScreener
@@ -113,4 +113,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 Daniel - [@Daniel9696r](https://x.com/Daniel9696r)
 Project Link: [https://github.com/aqsashlux/Daosworldprice](https://github.com/aqsashlux/Daosworldprice)
-Website: [daos.world](https://daos.world)
+
+*Note: This is an independent bot created for tracking tokens on the Daos World platform. It is not officially affiliated with or endorsed by Daos World.*
