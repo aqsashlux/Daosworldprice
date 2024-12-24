@@ -35,13 +35,34 @@ npm install
 ```
 
 ## Configuration
-1. Set up your `config.js` with your credentials:
-```javascript
-{
-  "telegram_token": "YOUR_TELEGRAM_BOT_TOKEN",
-  "update_interval": 300000  // 5 minutes in milliseconds
-}
+1. Crea un archivo `.env` en la raíz del proyecto:
+```bash
+# Crea y edita el archivo .env
+cp .env.example .env
 ```
+
+2. Configura tus variables de entorno en el archivo `.env`:
+```bash
+# Telegram Bot Configuration
+TELEGRAM_BOT_TOKEN=your_bot_token_here
+
+# API Configuration
+DEXSCREENER_API_URL=https://api.dexscreener.com/latest/dex
+POCKETHOST_API_URL=https://daos.pockethost.io/api
+
+# Update Configuration
+UPDATE_INTERVAL=300000  # 5 minutes in milliseconds
+```
+
+3. Obtén tu token de bot de Telegram:
+   - Habla con [@BotFather](https://t.me/BotFather) en Telegram
+   - Usa el comando `/newbot` para crear un nuevo bot
+   - Copia el token proporcionado y colócalo en `TELEGRAM_BOT_TOKEN`
+
+⚠️ **Importante**: 
+- Nunca compartas tu token de bot
+- No subas el archivo `.env` a Git (ya está en .gitignore)
+- Mantén una copia de respaldo segura de tu token
 
 ## Usage
 1. Start the bot:
